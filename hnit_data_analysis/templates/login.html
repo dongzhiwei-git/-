@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<!--   <link rel="stylesheet" type="text/css" href="css/index.css"/>-->
+    <title>登陆界面</title>
+</head>
+<body>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>sakura</title>
+	    <style>
+	        body{
+	        	
+	            padding:0;
+	            margin:0;
+	            overflow: hidden;   
+	            height: 600px;
+	        }
+	        canvas{
+				opacity: 0.6;
+	            padding: 0;
+	            margin: 0;
+
+	        }
+	       div.btnbg{
+	            position: fixed;
+	            left: 0;
+	            top: 0;
+                float: right;
+                position: absolute ;
+                top: 100px;
+                left: 300px;
+
+
+			}
+	        
+			.aa{
+				
+				
+				height:40%;
+				width: 100%;
+				
+				
+			}
+			
+			    
+				
+
+				
+			
+			
+			body{
+				margin:0;
+				padding:0;
+				/*background-image:url(2.jpg);*/
+                background-color: #5bc0de;
+				/*background-repeat:no;*/
+				background-size:100% 100%; 
+				background-attachment: fixed; 
+			}
+			#bigBox{
+				
+				/*margin-top:100px;*/
+				background-color:#00000090;
+				padding:20px 50px;
+				width:400px;
+				height:300px;
+				border-radius:10px;
+				text-align:center;
+				position: absolute ;
+				top: 200px;
+				left: 550px;
+				
+				
+				
+				
+				}
+			#bigBox h1{
+				color:white;
+			}
+			#bigBox .inputBox{
+				margin-top:50px;
+			}
+			#bigBox .inputBox .inputText
+			{
+				margin-top:20px;
+				
+				
+			}
+			#bigBox .inputBox .inputText input
+			{
+				border:0;
+				padding:10px 10px;
+				border-bottom:1px solid white;
+			 	background-color:#00000000;
+				color:white;
+			}
+			#bigBox .inputBox .inputButton{
+			    border:0;
+				width:150px;
+				height:20px;
+				color:white;
+				margin-top:30px;
+				border-radius:20px;
+				background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+				cursor:pointer;
+			}
+            .hint{
+                -webkit-text-fill-color: red;
+
+            }
+			
+	    </style>
+	</head>
+	<body >
+	<canvas id="sakura"></canvas>
+	<div class="btnbg"></div>
+	<!--sakura shader-->
+	
+	
+ <form  method="POST">
+     <div id="bigBox">
+         <h1>LOGINK</h1>
+         <div class="inputBox">
+           <div class="inputText">
+              <input type="text" placeholder="userName" name="user"/>
+
+               </div>
+                 <div class="inputText"> 
+                <input type="password" placeholder="password" name="pwd" />
+                <p class="hint">{{ msg }}</p>
+                </div>
+                <input type="submit" class="inputButton" value="LOGIN"/>
+          </div>     
+    </div>	
+</form>
+</body>
+</html>
